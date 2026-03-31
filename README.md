@@ -38,12 +38,12 @@ https://api.jikan.moe/v4/anime?genres={genre_id}
 Example:
 https://api.jikan.moe/v4/anime?genres=1
 
-Common Genre IDs:
+Common Genre:
 
-* 1 → Action
-* 2 → Adventure
-* 4 → Comedy
-* 22 → Romance
+* Action
+* Adventure
+* Comedy
+* Romance
 
 #### Sorting
 
@@ -68,16 +68,5 @@ To prevent hitting the limit, the application uses **debouncing (400–500ms del
 
 * HTML
 * CSS
-* JavaScript (Vanilla JS)
+* JavaScript
 * Jikan API
-
-## How to Run the Project
-
-1. Clone the repository:
-   git clone https://github.com/your-username/anivault.git
-
-2. Open the project folder:
-   cd anivault
-
-3. Run the project:
-   Open index.html in your browser
