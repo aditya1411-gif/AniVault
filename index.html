@@ -12,7 +12,7 @@
         <div class="nav-content">
             <h1 class="logo"><span class="logo-icon">▶</span>AniVault</h1>
             <div class="search-wrapper">
-                <span class="search-icon" style="top: 50%; left: 14px; position: absolute; transform: translateY(-50%);">🔍</span>
+                <span class="search-icon">🔍</span>
                 <input type="text" id="search-input" class="search-input" placeholder="Search...">
             </div>
 
@@ -23,7 +23,7 @@
         <aside class="sidebar">
             <div class="sidebar-section">
                 <h3 class="sidebar-title">Sort Navigation</h3>
-                <div class="filter-chips" id="sort-chips">
+                <div class="filter-chips">
                     <span class="chip sort-chip" data-sort="scoreDesc">Score: High to Low</span>
                     <span class="chip sort-chip" data-sort="scoreAsc">Score: Low to High</span>
                     <span class="chip sort-chip" data-sort="titleAsc">Title: A-Z</span>
@@ -50,7 +50,7 @@
             <div class="sidebar-section">
                 <h3 class="sidebar-title">Status</h3>
                 <div class="filter-chips">
-                    <span class="chip">Airing</span>
+                    <span class="chip">Currently Airing</span>
                     <span class="chip">Completed</span>
                     <span class="chip">Upcoming</span>
                 </div>
@@ -58,7 +58,7 @@
         </aside>
 
         <main class="main-content">
-            <div id="loading" class="loading" style="display: none;">Fetching initial animes...</div>
+            <div id="loading" class="loading" style="display: block;">Fetching initial animes...</div>
             <div id="anime-grid" class="anime-grid"></div>
             <div id="scroll-trigger" style="text-align: center; padding: 2rem; color: #888; font-weight: 500; font-size: 0.9rem;">Scroll down to load more...</div>
         </main>

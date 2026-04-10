@@ -15,9 +15,8 @@ let isFetching = false;
 
 async function fetchNextPage() {
     if (isFetching || !hasNextPage) return;
+    if (loading) loading.style.display = 'block';
     isFetching = true;
-
-    if (currentPage > 1 && loading) loading.style.display = 'none';
 
     try {
         const url = `https://api.jikan.moe/v4/top/anime?limit=25&page=${currentPage}`;
@@ -45,10 +44,7 @@ async function fetchNextPage() {
     } catch (err) {
         console.error('Data loading error:', err);
     } finally {
-        isFetching = false;
         if (loading) loading.style.display = 'none';
-        
-        await new Promise(resolve => setTimeout(resolve, 350));
     }
 }
 
